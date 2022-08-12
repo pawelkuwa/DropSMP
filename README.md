@@ -2,6 +2,10 @@
 Plugin wprowadzający mechanikę procentowych atrybutów gracza.
 
 
+
+
+
+
 Komendy:
 
 /dropsmp reload - przeładowuje plik konfiguracyjny (permisja: dropsmp.reload/dropsmp.*)
