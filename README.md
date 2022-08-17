@@ -7,3 +7,5 @@ Komendy:
 /dropsmp reload - przeładowuje plik konfiguracyjny (permisja: dropsmp.reload/dropsmp.*)
 
 /dropsmp dajprzedmioty - otwiera gui z przedmiotami (permisja: dropsmp.dajprzedmioty/dropsmp.*)
+
+/dropsmp edytujdrop - otwiera gui z przedmiotami które są w dropie i pozwala edytować drop (permisja: dropsmp.edytujdrop/dropsmp.*)
