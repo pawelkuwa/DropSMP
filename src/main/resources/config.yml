@@ -235,3 +235,14 @@ magic-items:
     sharpness-1: true
     #Cooldown w sekundach
     cooldown: 10
+  slowness-axe:
+    itemtype: DIAMOND_AXE
+    name: "§8◆ §b§lSiekiera spowolnienia"
+    lore:
+      - " "
+      - "             §8◆ §b§lFUNKCJA PRZEDMIOTU §8◆"
+      - ""
+      - "  §8◆ §7Co 10 sekund nakłada efekt spowolnienia! §8◆    "
+    unbreaking-1: true
+    #Cooldown w sekundach
+    cooldown: 10

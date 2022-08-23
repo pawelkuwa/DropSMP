@@ -134,6 +134,7 @@ public final class DropSMP extends JavaPlugin implements Listener {
         getServer().getPluginManager().registerEvents(new tribalChest(), this);
         getServer().getPluginManager().registerEvents(new nauseaSword(), this);
         getServer().getPluginManager().registerEvents(new lifestealSword(), this);
+        getServer().getPluginManager().registerEvents(new slownessAxe(), this);
 
         getServer().getPluginManager().registerEvents(this, this);
         getCommand("dropsmp").setExecutor(new reloadCommand());
