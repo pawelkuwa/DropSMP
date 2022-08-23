@@ -283,9 +283,20 @@ public class reloadCommand implements CommandExecutor {
                 }
                 tribal_chest.setItemMeta(tribal_chest_meta);
 
+                //miecz mdlosci
+                ItemStack nausea_sword = new ItemStack(Material.matchMaterial(DropSMP.getPlugin().getConfig().getString("magic-items.nausea-sword.itemtype")));
+                ItemMeta nausea_sword_meta = nausea_sword.getItemMeta();
+                nausea_sword_meta.setDisplayName(DropSMP.getPlugin().getConfig().getString("magic-items.nausea-sword.name"));
+                String[] nausea_sword_lore = DropSMP.getPlugin().getConfig().getStringList("magic-items.nausea-sword.lore").toArray(new String[0]);
+                nausea_sword_meta.setLore(List.of(nausea_sword_lore));
+                if (DropSMP.getPlugin().getConfig().getBoolean("magic-items.nausea-sword.sharpness-1")) {
+                    nausea_sword_meta.addEnchant(Enchantment.DAMAGE_ALL, 1, false);
+                }
+                nausea_sword.setItemMeta(nausea_sword_meta);
+
                 //gui
                 Inventory gui = Bukkit.createInventory(p, 18, ChatColor.DARK_AQUA + "Przedmioty DROPSMP");
-                ItemStack[] gui_items = {insygnia, sila, obrona, speed, lootbox, haste_pickaxe, x3_pickaxe, poison_sword, magic_axe, heart, sword_speed, flaming_boots, tribal_chest};
+                ItemStack[] gui_items = {insygnia, sila, obrona, speed, lootbox, haste_pickaxe, x3_pickaxe, poison_sword, magic_axe, heart, sword_speed, flaming_boots, tribal_chest, nausea_sword};
                 gui.setContents(gui_items);
                 p.openInventory(gui);
                 return true;
