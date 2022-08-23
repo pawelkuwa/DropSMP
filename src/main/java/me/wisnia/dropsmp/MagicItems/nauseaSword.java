@@ -30,7 +30,7 @@ public class nauseaSword implements Listener {
             if (!this.nauseaCooldown.containsKey(attacker.getUniqueId())) {
                 //code
                 this.nauseaCooldown.put(attacker.getUniqueId(), System.currentTimeMillis());
-                victim.addPotionEffect(new PotionEffect(PotionEffectType.POISON, 200, 1));
+                victim.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, 200, 1));
             } else {
                 long time = System.currentTimeMillis() - nauseaCooldown.get(attacker.getUniqueId());
                 if (time >= DropSMP.getPlugin().getConfig().getInt("magic-items.nausea-sword.cooldown") * 1000) {
