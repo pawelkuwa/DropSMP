@@ -305,9 +305,20 @@ public class reloadCommand implements CommandExecutor {
                 }
                 lifesteal_sword.setItemMeta(lifesteal_sword_meta);
 
+                //siekiera spowolnienia
+                ItemStack slowness_axe = new ItemStack(Material.matchMaterial(DropSMP.getPlugin().getConfig().getString("magic-items.slowness-axe.itemtype")));
+                ItemMeta slowness_axe_meta = slowness_axe.getItemMeta();
+                slowness_axe_meta.setDisplayName(DropSMP.getPlugin().getConfig().getString("magic-items.slowness-axe.name"));
+                String[] slowness_axe_lore = DropSMP.getPlugin().getConfig().getStringList("magic-items.slowness-axe.lore").toArray(new String[0]);
+                slowness_axe_meta.setLore(List.of(slowness_axe_lore));
+                if (DropSMP.getPlugin().getConfig().getBoolean("magic-items.slowness-axe.unbreaking-1")) {
+                    slowness_axe_meta.addEnchant(Enchantment.DURABILITY, 1, false);
+                }
+                slowness_axe.setItemMeta(slowness_axe_meta);
+
                 //gui
                 Inventory gui = Bukkit.createInventory(p, 18, ChatColor.DARK_AQUA + "Przedmioty DROPSMP");
-                ItemStack[] gui_items = {insygnia, sila, obrona, speed, lootbox, haste_pickaxe, x3_pickaxe, poison_sword, magic_axe, heart, sword_speed, flaming_boots, tribal_chest, nausea_sword, lifesteal_sword};
+                ItemStack[] gui_items = {insygnia, sila, obrona, speed, lootbox, haste_pickaxe, x3_pickaxe, poison_sword, magic_axe, heart, sword_speed, flaming_boots, tribal_chest, nausea_sword, lifesteal_sword, slowness_axe};
                 gui.setContents(gui_items);
                 p.openInventory(gui);
                 return true;
