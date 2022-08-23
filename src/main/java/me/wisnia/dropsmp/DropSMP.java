@@ -4,6 +4,7 @@ import eu.decentsoftware.holograms.api.DHAPI;
 import me.wisnia.dropsmp.Commands.reloadCommand;
 import me.wisnia.dropsmp.Listeners.*;
 import me.wisnia.dropsmp.MagicItems.*;
+import me.wisnia.dropsmp.Utils.rmTombstoneExternalBan;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -124,6 +125,7 @@ public final class DropSMP extends JavaPlugin implements Listener {
         getServer().getPluginManager().registerEvents(new blockInteractMagicItems(), this);
         getServer().getPluginManager().registerEvents(new saveDropsEvent(), this);
         getServer().getPluginManager().registerEvents(new tombstoneUsage(), this);
+        getServer().getPluginManager().registerEvents(new rmTombstoneExternalBan(), this);
 
         //magic items
         getServer().getPluginManager().registerEvents(new swordSpeed(), this);
