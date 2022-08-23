@@ -1,0 +1,215 @@
+#    $$$$$$$\  $$$$$$$\   $$$$$$\  $$$$$$$\   $$$$$$\  $$\      $$\ $$$$$$$\
+#    $$  __$$\ $$  __$$\ $$  __$$\ $$  __$$\ $$  __$$\ $$$\    $$$ |$$  __$$\
+#    $$ |  $$ |$$ |  $$ |$$ /  $$ |$$ |  $$ |$$ /  \__|$$$$\  $$$$ |$$ |  $$ |
+#    $$ |  $$ |$$$$$$$  |$$ |  $$ |$$$$$$$  |\$$$$$$\  $$\$$\$$ $$ |$$$$$$$  |
+#    $$ |  $$ |$$  __$$< $$ |  $$ |$$  ____/  \____$$\ $$ \$$$  $$ |$$  ____/
+#    $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |$$ |\$  /$$ |$$ |
+#    $$$$$$$  |$$ |  $$ | $$$$$$  |$$ |      \$$$$$$  |$$ | \_/ $$ |$$ |
+#    \_______/ \__|  \__| \______/ \__|       \______/ \__|     \__|\__|
+
+#       Informacje o autorze
+# ogladam anime#9438
+# https://discord.gg/pfD9VbDSNU
+# Wersja: 1.3
+# Wersja pluginu: PREMIUM
+
+#Jak ma wyglądać actionbar?
+actionbar: "§c⚔ {0}%    §7🛡 {1}%    §b⚡ {2}%"
+
+#Na ila ma być ban za stratę wszystkich statystyk? Czas podany w godzinach (działa tylko gdy use-external-ban-command jest na false)
+ban-time-hours: 24
+
+#Czy ban ma być z zewnętrznej komendy? (np. Essentials etc.)
+use-external-ban-command: false
+
+#Jak ma wyglądać komenda banowania gracza po smierci?
+external-ban-command: "ban {0} Zostałeś zabity!"
+
+#Czy unban ma być z zewnętrznej komendy? (np. Essentials etc.) Musi być jeżeli ban jeest z zewnętrznej komendy!!
+use-external-unban-command: false
+
+#Jak ma wyglądać komenda odbanowania gracza po wskrzeszeniu?
+external-unban-command: "unban {0}"
+
+#Jak ma wyglądać insygnia? Wszystkie infomacje
+insygnia:
+  itemtype: PAPER
+  name: "§8◆ §d§lINSYGNIA ODNOWIENIA"
+  lore:
+    - ' '
+    - '          §8◆ §b§lFUNKCJA PRZEDMIOTU §8◆'
+    - ''
+    - '  §8◆ §7Resetuje wszystkie statystyki do 100% §8◆    '
+    - '   §8◆ §eKliknij prawym, aby użyć przedmiotu §8◆    '
+  glowing: true
+  crafting:
+    status: true
+    slot1: AIR
+    slot2: GHAST_TEAR
+    slot3: AIR
+    slot4: GHAST_TEAR
+    slot5: GOLD_BLOCK
+    slot6: GHAST_TEAR
+    slot7: AIR
+    slot8: GHAST_TEAR
+    slot9: AIR
+
+#Jak mają wyglądać emblematy? Wszystkie informacje
+#limit: 250 #ile ma wynosić limit statystki dla gracza
+#glowing: true #czy przedmiot ma być enchantowany
+#gain-value: 10 #ile procent ma dawać użycie przedmiotu
+emblematy:
+  strength:
+    limit: 250
+    gain-value: 10
+    itemtype: PAPER
+    name: "§8◆ §c§lEMBLEMAT SIŁY"
+    lore:
+      - " "
+      - "          §8◆ §b§lFUNKCJA PRZEDMIOTU §8◆"
+      - ""
+      - "   §8◆ §7Podnosi statystykę siły o 10% §8◆    "
+      - "   §8◆ §eKliknij prawym, aby użyć przedmiotu §8◆    "
+    glowing: true
+  protection:
+    limit: 250
+    gain-value: 10
+    itemtype: PAPER
+    name: "§8◆ §7§lEMBLEMAT OBRONY"
+    lore:
+      - " "
+      - "          §8◆ §b§lFUNKCJA PRZEDMIOTU §8◆"
+      - ""
+      - "   §8◆ §7Podnosi statystykę obrony o 10% §8◆    "
+      - "   §8◆ §eKliknij prawym, aby użyć przedmiotu §8◆    "
+    glowing: true
+  speed:
+    limit: 250
+    gain-value: 10
+    itemtype: PAPER
+    name: "§8◆ §b§lEMBLEMAT SZYBKOŚCI"
+    lore:
+      - " "
+      - "          §8◆ §b§lFUNKCJA PRZEDMIOTU §8◆"
+      - ""
+      - "   §8◆ §7Podnosi statystykę szybkości o 10% §8◆    "
+      - "   §8◆ §eKliknij prawym, aby użyć przedmiotu §8◆    "
+    glowing: true
+
+#Jak ma wyglądać lootbox? Wszystkie inforamcje i procenty na drop
+mysterybox:
+  name: "§8◆ §3§lLOOTBOX"
+  lore:
+    - " "
+    - "             §8◆ §b§lFUNKCJA PRZEDMIOTU §8◆"
+    - ""
+    - "  §8◆ §7Pozwala na wylosowanie magicznego przedmiotu! §8◆    "
+    - "         §8◆ §eKliknij prawym, aby użyć przedmiotu §8◆    "
+  glowing: true
+  #Jak ma wyglądać mysterybox? Podaj link do skina. (https://minecraft-heads.com/)
+  skin-url: "https://textures.minecraft.net/texture/ac4970ea91ab06ece59d45fce7604d255431f2e03a737b226082c4cce1aca1c4"
+  drops:
+    #Jakie przedmioty mają znajdować się w dropie?
+    #Lista przedmiotów: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+    #Wygląd dodawanego przedmiotu: ITEM ILOŚĆ ENCHANTY name:NAZWA_PRZEDMIOTU lore:OPIS|DRUGA_LINIJKA
+    - "PAPER 1 DURABILITY:1 name:&8◆_&d&lINSYGNIA_ODNOWIENIA lore:_|__________&8◆_&b&lFUNKCJA_PRZEDMIOTU_&8◆||__&8◆_&7Resetuje_wszystkie_statystyki_do_100%_&8◆____|___&8◆_&eKliknij_prawym,_aby_użyć_przedmiotu_&8◆____"
+    - "PAPER 1 DURABILITY:1 name:&8◆_&c&lEMBLEMAT_SIŁY lore:_|__________&8◆_&b&lFUNKCJA_PRZEDMIOTU_&8◆||___&8◆_&7Podnosi_statystykę_siły_o_10%_&8◆____|___&8◆_&eKliknij_prawym,_aby_użyć_przedmiotu_&8◆____"
+    - "PAPER 1 DURABILITY:1 name:&8◆_&7&lEMBLEMAT_OBRONY lore:_|__________&8◆_&b&lFUNKCJA_PRZEDMIOTU_&8◆||___&8◆_&7Podnosi_statystykę_obrony_o_10%_&8◆____|___&8◆_&eKliknij_prawym,_aby_użyć_przedmiotu_&8◆____"
+    - "PAPER 1 DURABILITY:1 name:&8◆_&b&lEMBLEMAT_SZYBKOŚCI lore:_|__________&8◆_&b&lFUNKCJA_PRZEDMIOTU_&8◆||___&8◆_&7Podnosi_statystykę_szybkości_o_10%_&8◆____|___&8◆_&eKliknij_prawym,_aby_użyć_przedmiotu_&8◆____"
+    - "DIAMOND_PICKAXE 1 DURABILITY:1 name:&8◆_&6&lKilof_szybkości lore:_|_____________&8◆_&b&lFUNKCJA_PRZEDMIOTU_&8◆||__&8◆_&7Podczas_trzymania_w_ręku_nadaje_efekt_HASTE!_&8◆____"
+    - "DIAMOND_PICKAXE 1 DURABILITY:1 name:&8◆_&b&lKilof_3x3 lore:_|_____________&8◆_&b&lFUNKCJA_PRZEDMIOTU_&8◆||__&8◆_&7Wykopanie_bloku_spowoduje_zniszczenie_bloków_3x3!_&8◆____"
+    - "DIAMOND_SWORD 1 DAMAGE_ALL:1 name:&8◆_&2&lZatruty_miecz lore:_|_____________&8◆_&b&lFUNKCJA_PRZEDMIOTU_&8◆||__&8◆_&7Co_10_sekund_nakłada_efekt_zatrucia!_&8◆____"
+    - "DIAMOND_AXE 1 DURABILITY:1 name:&8◆_&9&lMagiczna_siekiera lore:_|_____________&8◆_&b&lFUNKCJA_PRZEDMIOTU_&8◆||__&8◆_&7Co_5_sekund_przy_ataku_nakłada_piorun!_&8◆____"
+    - "RED_DYE 1 DURABILITY:1 name:&8◆_&c&lDodatkowe_serce lore:_|_____________&8◆_&b&lFUNKCJA_PRZEDMIOTU_&8◆||__&8◆_&7Dodaje_dodatkowe_stałe_serce!_&8◆____"
+  #Szansa na drop głowy po zabiciu gracza
+  chance-for-drop: 50
+
+#Ile ma trwać cooldown na drop lootboxa po zabiciu gracza? Czas podaj w sekundach
+next-drop-time: 3600
+
+#Specjalne przedmioty i ich ustawienia
+magic-items:
+  #Kilof szybkości
+  haste-pickaxe:
+    itemtype: DIAMOND_PICKAXE
+    name: "§8◆ §6§lKilof szybkości"
+    lore:
+    - " "
+    - "             §8◆ §b§lFUNKCJA PRZEDMIOTU §8◆"
+    - ""
+    - "  §8◆ §7Podczas trzymania w ręku nadaje efekt HASTE! §8◆    "
+    unbreaking-1: true
+  #Kilof szybkości
+  3x3-pickaxe:
+    itemtype: DIAMOND_PICKAXE
+    name: "§8◆ §b§lKilof 3x3"
+    lore:
+      - " "
+      - "             §8◆ §b§lFUNKCJA PRZEDMIOTU §8◆"
+      - ""
+      - "  §8◆ §7Wykopanie bloku spowoduje zniszczenie bloków 3x3! §8◆    "
+    unbreaking-1: true
+  #Zatruty miecz
+  poison-sword:
+    itemtype: DIAMOND_SWORD
+    name: "§8◆ §2§lZatruty miecz"
+    lore:
+      - " "
+      - "             §8◆ §b§lFUNKCJA PRZEDMIOTU §8◆"
+      - ""
+      - "  §8◆ §7Co 10 sekund nakłada efekt zatrucia! §8◆    "
+    sharpness-1: true
+    #Cooldown w sekundach
+    cooldown: 10
+  magic-axe:
+    itemtype: DIAMOND_AXE
+    name: "§8◆ §9§lMagiczna siekiera"
+    lore:
+      - " "
+      - "             §8◆ §b§lFUNKCJA PRZEDMIOTU §8◆"
+      - ""
+      - "  §8◆ §7Co 5 sekund przy ataku nakłada piorun! §8◆    "
+    unbreaking-1: true
+    #Cooldown w sekundach
+    cooldown: 5
+  heart:
+    itemtype: RED_DYE
+    name: "§8◆ §c§lDodatkowe serce"
+    lore:
+      - " "
+      - "             §8◆ §b§lFUNKCJA PRZEDMIOTU §8◆"
+      - ""
+      - "  §8◆ §7Dodaje dodatkowe stałe serce! §8◆    "
+    unbreaking-1: true
+    #Ile ma wynosić limit serc?
+    limit: 20
+  sword-speed:
+    itemtype: DIAMOND_SWORD
+    name: "§8◆ §b§lMiecz szybkości"
+    lore:
+      - " "
+      - "             §8◆ §b§lFUNKCJA PRZEDMIOTU §8◆"
+      - ""
+      - "  §8◆ §7Co 10 sekund nakłada efekt szybkości! §8◆    "
+    sharpness-1: true
+    #Cooldown w sekundach
+    cooldown: 10
+  flaming-boots:
+    itemtype: DIAMOND_BOOTS
+    name: "§8◆ §6§lPłomienne buty"
+    lore:
+      - " "
+      - "             §8◆ §b§lFUNKCJA PRZEDMIOTU §8◆"
+      - ""
+      - "  §8◆ §7Pozwala chodzić po lawie! §8◆    "
+    unbreaking-1: true
+  tribal-chest:
+    itemtype: DIAMOND_CHESTPLATE
+    name: "§8◆ §a§lPlemienna zbroja"
+    lore:
+      - " "
+      - "             §8◆ §b§lFUNKCJA PRZEDMIOTU §8◆"
+      - ""
+      - "  §8◆ §7Dodaje 2 dodatkowe serca podczas noszenia! §8◆    "
+    unbreaking-1: true
+    heart-add: 2

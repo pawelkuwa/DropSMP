@@ -1,0 +1,11 @@
+name: DropSMP
+version: 1.4alpha2
+main: me.wisnia.dropsmp.DropSMP
+api-version: 1.13
+authors: [ _wisnia ]
+softdepend: [ PlaceholderAPI, DecentHolograms ]
+website: https://discord.gg/pfD9VbDSNU
+description: Plugin wprowadzający mechanikę procentowych atrybutów gracza.
+commands:
+  dropsmp:
+    description: "Główna komenda pluginu"
