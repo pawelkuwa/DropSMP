@@ -224,3 +224,14 @@ magic-items:
     sharpness-1: true
     #Cooldown w sekundach
     cooldown: 10
+  lifesteal-sword:
+    itemtype: DIAMOND_SWORD
+    name: "§8◆ §c§lMiecz krwiopijcy"
+    lore:
+      - " "
+      - "             §8◆ §b§lFUNKCJA PRZEDMIOTU §8◆"
+      - ""
+      - "  §8◆ §7Co 10 sekund dodaje dodatkowe serce! §8◆    "
+    sharpness-1: true
+    #Cooldown w sekundach
+    cooldown: 10

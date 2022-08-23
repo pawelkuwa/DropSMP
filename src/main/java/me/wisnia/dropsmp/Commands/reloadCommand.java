@@ -294,9 +294,20 @@ public class reloadCommand implements CommandExecutor {
                 }
                 nausea_sword.setItemMeta(nausea_sword_meta);
 
+                //miecz krwiopijcy
+                ItemStack lifesteal_sword = new ItemStack(Material.matchMaterial(DropSMP.getPlugin().getConfig().getString("magic-items.lifesteal-sword.itemtype")));
+                ItemMeta lifesteal_sword_meta = lifesteal_sword.getItemMeta();
+                lifesteal_sword_meta.setDisplayName(DropSMP.getPlugin().getConfig().getString("magic-items.lifesteal-sword.name"));
+                String[] lifesteal_sword_lore = DropSMP.getPlugin().getConfig().getStringList("magic-items.lifesteal-sword.lore").toArray(new String[0]);
+                lifesteal_sword_meta.setLore(List.of(lifesteal_sword_lore));
+                if (DropSMP.getPlugin().getConfig().getBoolean("magic-items.lifesteal-sword.sharpness-1")) {
+                    lifesteal_sword_meta.addEnchant(Enchantment.DAMAGE_ALL, 1, false);
+                }
+                lifesteal_sword.setItemMeta(lifesteal_sword_meta);
+
                 //gui
                 Inventory gui = Bukkit.createInventory(p, 18, ChatColor.DARK_AQUA + "Przedmioty DROPSMP");
-                ItemStack[] gui_items = {insygnia, sila, obrona, speed, lootbox, haste_pickaxe, x3_pickaxe, poison_sword, magic_axe, heart, sword_speed, flaming_boots, tribal_chest, nausea_sword};
+                ItemStack[] gui_items = {insygnia, sila, obrona, speed, lootbox, haste_pickaxe, x3_pickaxe, poison_sword, magic_axe, heart, sword_speed, flaming_boots, tribal_chest, nausea_sword, lifesteal_sword};
                 gui.setContents(gui_items);
                 p.openInventory(gui);
                 return true;
