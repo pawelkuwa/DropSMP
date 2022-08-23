@@ -10,6 +10,7 @@ import org.bukkit.block.BlockFace;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.enchantments.Enchantment;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
@@ -30,12 +31,19 @@ public class removeStatsWhenDead implements Listener {
 
     @EventHandler
     public void onPlayerDeath(PlayerDeathEvent e) throws IOException {
+        Player attacker = e.getEntity();
+        Player victim = e.getPlayer();
         File userdata = new File(Bukkit.getServer().getPluginManager().getPlugin("DropSMP").getDataFolder(), File.separator + "data");
         File f = new File(userdata, File.separator + e.getPlayer().getName() + ".yml");
         FileConfiguration yaml = YamlConfiguration.loadConfiguration(f);
         Boolean drop_loot = true;
         if (yaml.getInt("last-drop") >= Instant.now().getEpochSecond()) {
             drop_loot = false;
+        }
+        if (yaml.getBoolean("drop-lootbox-address-bypass")) {
+            if (attacker.getAddress() == victim.getAddress()) {
+                drop_loot = false;
+            }
         }
         if (drop_loot) {
             Random rand = new Random();
