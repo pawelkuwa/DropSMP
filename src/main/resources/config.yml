@@ -213,3 +213,14 @@ magic-items:
       - "  §8◆ §7Dodaje 2 dodatkowe serca podczas noszenia! §8◆    "
     unbreaking-1: true
     heart-add: 2
+  nausea-sword:
+    itemtype: DIAMOND_SWORD
+    name: "§8◆ §5§lMiecz mdłości"
+    lore:
+      - " "
+      - "             §8◆ §b§lFUNKCJA PRZEDMIOTU §8◆"
+      - ""
+      - "  §8◆ §7Co 10 sekund nakłada efekt mdłości! §8◆    "
+    sharpness-1: true
+    #Cooldown w sekundach
+    cooldown: 10
