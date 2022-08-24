@@ -4,6 +4,7 @@ import eu.decentsoftware.holograms.api.DHAPI;
 import me.wisnia.dropsmp.Commands.reloadCommand;
 import me.wisnia.dropsmp.Listeners.*;
 import me.wisnia.dropsmp.MagicItems.*;
+import me.wisnia.dropsmp.Utils.Metrics;
 import me.wisnia.dropsmp.Utils.rmTombstoneExternalBan;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -32,6 +33,9 @@ public final class DropSMP extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
+        int pluginId = 16246;
+        Metrics metrics = new Metrics(this, pluginId);
+
         plugin = this;
         instance = this;
         File cfg = new File(this.getDataFolder() + "/config.yml");
