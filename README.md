@@ -17,9 +17,12 @@
 - /dropsmp reset <nick> - resetuje wszystkie statystyki gracza (permisja: dropsmp.reset/dropsmp.*)
 
  
+# Placeholdery
+
+- %dropsmp_strength% - wyświetla procent siły gracza
  
- # Placeholdery
-  
- - /test
-  
- - /test2
+- %dropsmp_protection% - wyświetla procent obrony gracza
+ 
+- %dropsmp_speed% - wyświetla procent szybkości gracza
+ 
+- %dropsmp_hearth% - wyświetla serca gracza
