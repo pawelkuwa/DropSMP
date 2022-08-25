@@ -1,4 +1,4 @@
-![]([https://www.spigotmc.org/data/resource_icons/104/104609.jpg?1660705824](https://i.imgur.com/O1jy7rn.png)) 
+![](https://i.imgur.com/O1jy7rn.png) 
 
 # Komendy
 
