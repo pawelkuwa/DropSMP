@@ -16,6 +16,8 @@
 
 - /dropsmp reset <nick> - resetuje wszystkie statystyki gracza (permisja: dropsmp.reset/dropsmp.*)
 
+ 
+ 
  # Placeholdery
   
  - /test
