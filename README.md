@@ -39,8 +39,10 @@
 https://mc-packs.net/
 
 ### server.properties
-resource-pack=link
-resource-pack-sha1=sha
+`resource-pack=link`
+ 
+`resource-pack-sha1=sha`
 
 (opcjonalnie, jeżeli chcesz, aby każdy korzystał z ikonek)
-require-resource-pack=false
+ 
+`require-resource-pack=false`
