@@ -31,3 +31,16 @@
  
 - DecentHolograms (wymagane)
 - PlaceholderAPI (opcjonalne)
+
+# Texturepack
+[Pobierz](https://download.mc-packs.net/pack/f7ed23ca6653e97449240a0fadaf77619c4d229e.zip)
+
+### Najlepszy host
+https://mc-packs.net/
+
+### server.properties
+resource-pack=link
+resource-pack-sha1=sha
+
+(opcjonalnie, jeżeli chcesz, aby każdy korzystał z ikonek)
+require-resource-pack=false
