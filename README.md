@@ -17,3 +17,9 @@
 - /dropsmp remove <nick> sila/obrona/szybkosc <ilość> - zabiera procent z statystyki gracza (permisja: dropsmp.remove/dropsmp.*)
 
 - /dropsmp reset <nick> - resetuje wszystkie statystyki gracza (permisja: dropsmp.reset/dropsmp.*)
+
+  ### Placeholdery
+  
+  - /test
+  
+  - /test2
