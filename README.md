@@ -1,8 +1,6 @@
-![](https://www.spigotmc.org/data/resource_icons/104/104609.jpg?1660705824) 
+![]([https://www.spigotmc.org/data/resource_icons/104/104609.jpg?1660705824](https://i.imgur.com/O1jy7rn.png)) 
 
-# DropSMP
-
-### Komendy
+# Komendy
 
 - /dropsmp reload - przeładowuje plik konfiguracyjny (permisja: dropsmp.reload/dropsmp.*)
 
@@ -18,7 +16,7 @@
 
 - /dropsmp reset <nick> - resetuje wszystkie statystyki gracza (permisja: dropsmp.reset/dropsmp.*)
 
-  ### Placeholdery
+  # Placeholdery
   
   - /test
   
