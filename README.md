@@ -1,6 +1,4 @@
-# DropSMP
-
-![](https://www.spigotmc.org/data/resource_icons/104/104609.jpg?1660705824)
+![](https://www.spigotmc.org/data/resource_icons/104/104609.jpg?1660705824) # DropSMP
 
 ### Komendy
 
