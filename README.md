@@ -25,7 +25,7 @@
  
 - %dropsmp_speed% - wyświetla procent szybkości gracza
  
-- %dropsmp_hearth% - wyświetla serca gracza
+- %dropsmp_heart% - wyświetla serca gracza
 
 # Wymagania
  
