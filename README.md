@@ -1,6 +1,6 @@
 ![](https://i.imgur.com/O1jy7rn.png) 
 
-# [Pobierz]([link](https://github.com/pawelkuwa/DropSMP/releases/tag/1.5))
+# [Pobierz](https://github.com/pawelkuwa/DropSMP/releases/tag/1.5)
 
 # Komendy
 
