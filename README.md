@@ -1,5 +1,7 @@
 ![](https://i.imgur.com/O1jy7rn.png) 
 
+#[Pobierz](link)
+
 # Komendy
 
 - /dropsmp reload - przeładowuje plik konfiguracyjny (permisja: dropsmp.reload/dropsmp.*)
