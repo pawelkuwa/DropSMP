@@ -48,3 +48,8 @@ https://mc-packs.net/
 (opcjonalnie, jeżeli chcesz, aby każdy korzystał z ikonek)
  
 `require-resource-pack=false`
+
+
+# bStats
+
+![](https://bstats.org/signatures/bukkit/DropSMP.svg)
